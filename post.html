@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a vacanct - Kalyx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="site-header">
+    <div class="site-content">
+        <a href="index.html" class="logo-link">
+            <img src="kalyx.jpg" alt="kalyx logo" class="logo">
+        </a>
+        <div class="header-text">
+            <h1>KALYX</h1>
+        </div>
+    </div>
+   </header> 
+
+   <main class="container">
+    <a href="index.html" class="back-link"> Back to all listings</a>
+
+    <div class="form-card">
+        <h2 style="margin-bottom: 1.5rem;"> Post a vacant house or room</h2>
+        
+        <form id="post-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="e.g. 2 Bedroom near Kibaki"required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Rent per month ( KSH)*</label> 
+                <input type="number" id="price" name="price" placeholder="15000"required>
+            </div>
+
+            <div class="form-group">
+                <label for="Location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Likoni, Mombasa"required>
+            </div>
+            <div class="form-group">
+                <label for="rooms">Number of rooms</label>
+                <input type="number" id="rooms" name="roooms" value="1" min="1">
+            </div>
+            <div class="form-group">
+                 <label for="description">Description</label>
+                 <textarea id="description" name="description" placeholder="Tell tenants about
+                the place..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact number</label>
+                <input type="tel" id="contact" name="contact" placeholder="+254..."required>
+            </div>
+            <div class="form-group">
+                <label>Photo of the room / house</label>
+                <p style="font-size:0.9rem; color: #7f8c8d; margin-bottom: 0.6rem;">
+                    Paste an image link or upload a photo.
+                </p>
+                <input type="url" id="image-url" name="imageUrl" placeholder="Paste image URL (0ptional)">
+                <div style="margin: 0.8rem 0; text-align: center; color: #aaa;">-or-</div>
+                <input type="file" id="image-file" accept="image/*">
+                <div class="image-preview" id="image-preview">
+                    <img src="" alt="Preview">
+                </div>         
+            </div>
+            <div class="form-actins">
+                <button type="submit" class="btn btn-primary">Post a vacancy</button>
+                <a href="index.html" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+   </main>
+
+   <footer class="site-footer">
+    Kalyx ~ better future
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>

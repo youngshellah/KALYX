@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyx - Find a house or room near you</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="kalyx.jpg" alt="kalyx logo" class="logo">
+            </a>
+            <div class="header-text">
+                <h1>KALYX</h1>
+                <p>Find a house or room near you</p>
+
+            </div>
+                <button id="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i></button>
+
+            </div>
+            <div class="menu-wrap">
+  <button id="menu-toggle" type="button" aria-label="More information" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div id="menu-panel" class="menu-panel" hidden>
+    <h3>More information</h3>
+    <p>Kalyx helps you find a house or room near you, and lets landlords post vacancies for free.</p>
+    <a href="post.html"><i class="fa-solid fa-plus"></i> Post a vacancy</a>
+    <a href="https://wa.me/254769792179" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Contact us on WhatsApp</a>
+    <a href="#"><i class="fa-solid fa-circle-info"></i> How it works</a>
+    <a href="#"><i class="fa-solid fa-shield-halved"></i> Safety tips</a>
+  </div>
+</div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Available now</h2>
+            <a href="post.html" class="btn btn-primary"> + Post a vacancy</a>
+
+        </div>
+
+        <!--Location Search Box-->
+        <div class="search-box">
+            <input type="text" id="location-sesrch" placeholder="Type the location you want
+             (e.g. Likoni, Nyali, Mtwapa)...">
+             <button onclick= "renderHomepage()" class="btn btn-primary search-btn">Search</button>
+        </div>
+
+        <!--Search & Filters-->
+        <div class="filters">
+            <div>
+                <label for="Search">Search</label>
+                <input type="text" id="search" placeholder="Title or Location...">
+            </div>
+            <div>
+                <label for="max-price">Max price (Ksh)</label>
+                <input type="number"  id="max-price" placeholder="Any">
+            </div>
+            <div>
+                <label for="rooms-filter">Rooms</label>
+                <select id="rooms-filter">
+                    <option value="">Any</option>
+                    <option value="1">1 room</option>
+                    <option value="2">2 rooms</option>
+                    <option value="3">3 rooms</option>
+                    <option value="4">4 rooms</option>
+                    <option value="">Bedsitter</option>
+                    <option value="">Single room</option>
+                    <option value="">Air B'N'B</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Description
+                <input type="text" id="describe your house" placeholder="description">
+                </label>
+            </div>
+            <div>
+                <label style="display:flex; align-items: center;
+                gap: 0.5rem; cursor: pointer; margin-top: 1.6rem;">
+                <input type="checkbox" id="hide-taken"> Hide taken listings
+                </label>
+            </div>
+        </div>
+
+        <div id="listings-container"></div>
+        
+    </main>
+
+    <!--Whatsapp floating button-->
+      <a href="https://wa.me/254769792179" target="_blank" rel="noopener" title="Chat on WhatsApp" 
+      aria-label="Chat on WhatsApp"
+      style="position:fixed; bottom:20px; right:20px; width:60px; height:60px; background:#25D366;
+      color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; 
+      font-size:34px; text-decoration:none; box-shadow:0 4px 12px rgba(0,0,0,.3); z-index:1000;">
+      <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+
+    <footer class="site-footer">
+         Kalyx ~ Better future together
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
