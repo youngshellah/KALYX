@@ -642,3 +642,112 @@ body.dark .menu-panel a { color: #eee; border-color: #333; }
 }
 .contact-btn:hover { background: #1ebe5b; }
 
+
+/* ===== ABOUT PAGE ===== */
+.about-content {
+  background: white;
+  padding: 40px 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+
+.about-content h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.about-content p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.about-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-content li {
+  margin-bottom: 8px;
+}
+
+/* ===== FOOTER LINKS ===== */
+.footer-links {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* ===== MOBILE IMPROVEMENTS ===== */
+@media (max-width: 600px) {
+  .header-content {
+    gap: 12px;
+  }
+
+  .logo {
+    height: 48px;
+  }
+
+  .header-text h1 {
+    font-size: 22px;
+  }
+
+  .header-text p {
+    font-size: 13px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-header h2 {
+    font-size: 22px;
+  }
+
+  .detail-image {
+    height: 260px;
+  }
+
+  .detail-price {
+    font-size: 26px;
+  }
+
+  .detail-title {
+    font-size: 22px;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+  }
+
+  .detail-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-content {
+    padding: 28px 20px;
+  }
+}
